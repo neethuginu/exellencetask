@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+   function submit(form)
+  {  
+    if(!form.terms.checked) {
+      alert("Please check me");
+      form.terms.focus();
+      return false;
+    }
+    return true;
+  }
+
+</script>
+</script>
+
+<body>
+    <form name="inp" onsubmit=" return submit(this)">
+        <input type="text" name="firstname" required />
+        <input type="checkbox" name="checkme">check me</input>
+        <button type="submit" value="submit" >button</button>
+    </form>
+
+</body>
+
+</html>
